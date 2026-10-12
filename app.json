@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "TetaPortfolio",
+    "slug": "teta-portfolio",
+    "version": "1.0.0",
+    "scheme": "tetaportfolio",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#8B5CF0",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "rw.ac.ines.ug2528255.tetaportfolio",
+      "infoPlist": {
+        "NSCameraUsageDescription": "TetaPortfolio uses the camera so you can take a new profile photo.",
+        "NSPhotoLibraryUsageDescription": "TetaPortfolio uses your photo library so you can choose a profile photo."
+      }
+    },
+    "android": {
+      "package": "rw.ac.ines.ug2528255.tetaportfolio",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundImage": "./assets/adaptive-icon-background.png",
+        "backgroundColor": "#8B5CF0"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "blockedPermissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#8B5CF0"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "TetaPortfolio uses your photo library so you can choose a profile photo.",
+          "cameraPermission": "TetaPortfolio uses the camera so you can take a new profile photo.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {}
+    }
+  }
+}
